@@ -1,3 +1,10 @@
+/*
+   sdrplay is a Go package that enables to use the RSP (by SDRplay) in a Go program.
+   Copyright (C) 2016 Claudio Carraro carraro.claudio@gmail.com
+
+   See the COPYING file to GPLv2 license details.
+*/
+
 package sdrplay
 
 import "C"
