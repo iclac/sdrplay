@@ -29,7 +29,7 @@ func StreamCallback(xi *C.short, xq *C.short, firstSampleNum C.uint, grChanged C
 	i := make([]int16, len(is))
 	copy(i, is)
 
-	qs := (*[1 << 30]int16)(unsafe.Pointer(xi))[:numSample:numSample]
+	qs := (*[1 << 30]int16)(unsafe.Pointer(xq))[:numSample:numSample]
 	q := make([]int16, len(qs))
 	copy(q, qs)
 
